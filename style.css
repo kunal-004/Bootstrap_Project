@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(216, 206, 206);
+}
+
+.icon {
+    text-align: justify;
+    width: 50px;
+}
+
+.icon {
+    display: block;
+    margin: 0 auto;
+}
+
+#cards {
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #34e0b2);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    max-width: 100%;
+    padding-bottom: 1px;
+    padding-top: 2% ;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+  #grow img {
+    transition: 1s ease;
+    }
+    
+    #grow img:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+    }

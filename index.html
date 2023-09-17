@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car-Omega</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<link href="style.css" rel="stylesheet">
+
+<body>
+  <nav class="navbar navbar-expand-sm  navbar-dark bg-dark">
+    <a class="navbar-brand"><img class="icon"
+        src="https://cdn.vectorstock.com/i/1000x1000/92/01/gold-car-logo-icon-vector-45769201.webp" width="50px">
+      Car-Omega</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            New Cars
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Expolore New Cars</a></li>
+            <li><a class="dropdown-item" href="#">Upcoming Projects</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">FAQ's</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Contact</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      <!-- Login Modal -->
+      <div class="mx-2">
+        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content rounded-4 shadow">
+              <div class="modal-header p-5 pb-4 border-bottom-0">
+                <h1 class="fw-bold mb-0 fs-2"> Login To Car-Omega</h1>
+              </div>
+
+              <div class="modal-body p-5 pt-0">
+                <form class="">
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control rounded-3" id="floatingInput"
+                      placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                  </div>
+                  <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Submit</button>
+                  <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
+                  <hr class="my-4">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- end of nav bar -->
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://images.pexels.com/photos/11921988/pexels-photo-11921988.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          class="d-block w-100" alt="..." height="690x520">
+        <div class="carousel-caption">
+          <h1 style="margin-bottom: 490px; color: rgb(28, 26, 25);">FIND THE RIGHT CAR</h1>
+          <h5>Red BMW</h5>
+          <p>Gets New Design & Features</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://images.pexels.com/photos/18251570/pexels-photo-18251570/free-photo-of-black-mercedes-riding-on-a-road.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          class="d-block w-100" alt="..." height="690x520">
+        <div class="carousel-caption ">
+          <h5>Black Mercedes</h5>
+          <p>Now with More Range</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://images.pexels.com/photos/18251550/pexels-photo-18251550/free-photo-of-white-mercedes-riding-on-a-field.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          class="d-block w-100" alt="..." height="690x520">
+        <div class="carousel-caption">
+          <h5>White Mercedes</h5>
+          <p>Available in 12 Variants</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    <br><br>
+  </div>
+  <!-- end of carousel -->
+  <div class="container" id="cards">
+    <div class="container my-5">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img
+              src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Mercedes-Benz/EQE-SUV/9404/1694768428968/front-left-side-47.jpg?tr=w-456"
+              width="100%" height="225" role="img" aria-label="Placeholder: Thumbnail"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em" style="text-align: center;">
+              Mercedes-Benz EQE SUV</text>
+            <div class="card-body">
+              <p class="card-text" style="text-align: justify;"> Mercedes-Benz EQE SUV is offered in 1 variants the top variant Mercedes-Benz EQE SUV 500 4MATIC which comes at a price tag of Rs. 1.39 Cr.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">$ Buy</button>
+                </div>
+                <small class="text-body-secondary"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img
+              src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Volvo/C40-Recharge/9224/1693842924520/front-left-side-47.jpg?tr=w-456"
+              width="100%" height="225" role="img" aria-label="Placeholder: Thumbnail"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em" style="text-align: center;">Volvo
+              C40 Recharge </text>
+            <div class="card-body">
+              <p class="card-text" style="text-align: justify;">Volvo C40 Recharge is offered in 1 variant sm the model and the top variant Volvo C40 Recharge E80 which comes at a price tag of Rs. 61.25 Lakh.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">$ Buy</button>
+                </div>
+                <small class="text-body-secondary"></small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img
+              src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Mahindra/Thar/10743/1690192572470/front-left-side-47.jpg?tr=w-456"
+              width="100%" height="225" role="img" aria-label="Placeholder: Thumbnail"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" style="text-align: center;"
+              dy=".3em">Mahindra Thar</text>
+            <div class="card-body">
+              <p class="card-text" style="text-align: justify;"> Mahindra Thar is offered in 13 variants the top variant Mahindra Thar LX 4-Str Hard Top Diesel AT which comes at a price tag of Rs. 16.78 Lakh.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">$ Buy</button>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr style="padding-top: 10px;">
+  <h1 style="text-align: center;"> Where to next? </h1>
+  <p style="text-align: center;">Whether you’re shopping for a new car or selling your current one, the next step in your journey starts here. Explore the possibilities.</p>
+  <hr>
+  <!-- end of cards -->
+
+  <div class="container" id="grow" max-width: 100%;">
+    <div class="container my-4">
+      <div class="row featurette d-flex justify-content-center align-items-center">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1">Certified Pre-Owned</h2>
+          <p class="lead">Consider Certified Pre-Owned vehicles for like-new quality at used prices. Compare manufacturer programs. Search local CPO inventory in your area.</p>
+        </div>
+        <div class="col-md-5 order-md-2">
+          <img src="https://d1hv7ee95zft1i.cloudfront.net/custom/blog-post/original/certified-pre-owned-cars-autodeal-5ee090d986701.jpg"
+            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400" height="400"
+            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%"
+            fill="var(--bs-secondary-color)" dy=".3em">
+        </div>
+      </div>
+    </div>
+    <div class="container my-4">
+      <div class="row featurette d-flex justify-content-center align-items-center">
+        <div class="col-md-7 order-md-1">
+          <h2 class="featurette-heading fw-normal lh-1">Shop</h2>
+          <p class="lead">Search millions of new and used cars for sale. Save favorites for price drop alerts and tailored recommendations. Find the right vehicle at a highly-rated local dealer.
+            </p>
+        </div>
+        <div class="col-md-5">
+          <img src="https://static.foxbusiness.com/foxbusiness.com/content/uploads/2020/05/car-video-grab.jpg"
+            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400" height="400"
+            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%"
+            fill="var(--bs-secondary-color)" dy=".3em">
+        </div>
+      </div>
+    </div>
+    <div class="container my-4">
+      <div class="row featurette d-flex justify-content-center align-items-center">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1"> Service & Repair</h2>
+          <p class="lead">Watch do-it-yourself tutorials. Check current manufacturer recalls. Find local repair options. We’re here to help throughout your ownership experience.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="https://www.kbb.com/wp-content/uploads/2022/11/car-mechanic-holding-clipboard.jpg?resize=1068,601"
+            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400" height="400"
+            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice" focusable="false">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%"
+            fill="var(--bs-secondary-color)" dy=".3em">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of carousel -->
+
+  <div class="container" style="background-color:  rgb(218, 218, 218); max-width: 100%; padding-top: 3rem;">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Our Company</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About Us</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Terms & Condition</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQ'S</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>CONNECT</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Feedback</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Reviews</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact US</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Enquiries</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-3">
+          <h5>OTHERS</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Leave You Comments Here</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Comments</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Comment..">
+              <button class="btn btn-primary" type="button">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>© 2023 Car-Omega, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#twitter"></use>
+              </svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#instagram"></use>
+              </svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#facebook"></use>
+              </svg></a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>
