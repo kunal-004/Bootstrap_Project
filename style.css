@@ -14,9 +14,12 @@ body{
 
 @media screen and (max-height: 1000px) {
   .carousel-item {
-  height: 25rem;
-  }}
-
+  height: 500px;
+  .carousel-caption{
+    text-align: center;
+    margin-bottom: 20rem;
+    color: #495053;
+  }} 
 #cards {
     background: linear-gradient(300deg, #00bfff, #ff4c68, #34e0b2);
     background-size: 180% 180%;
