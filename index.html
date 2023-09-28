@@ -285,8 +285,11 @@
   <!-- end of carousel -->
 
   <div class="container" style="background-color:  rgb(218, 218, 218); max-width: 100%; padding-top: 3rem;">
+    <div class="contain">
+      <button id="btn" onclick="toggle()" style="border: 2px solid rgb(28, 28, 28); color: rgb(36, 43, 43); padding: 10px 14px;">Show Less ▲</button>
+    </div>
     <footer class="py-5">
-      <div class="row">
+      <div class="row" id="foot>
         <div class="col-6 col-md-2 mb-3">
           <h5>Our Company</h5>
           <ul class="nav flex-column">
@@ -348,7 +351,17 @@
       </div>
     </footer>
   </div>
-
+<script>
+        function toggle(){
+           if (foot.style.display != 'none'){
+            foot.style.display = "none";
+            document.getElementById("btn").innerHTML="Show More ▼"
+           }else{
+            foot.style.display = "block";
+            document.getElementById("btn").innerHTML="Show Less ▲"
+          }
+           }
+</script>
 </body>
 
 </html>
